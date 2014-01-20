@@ -36,8 +36,9 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   # Deployment
-  gem "capistrano", :group => :development
+  gem "capistrano", '2.15.4'
   gem 'rvm-capistrano'
+  #gem 'capistrano-bundler'
 end
 
 

@@ -3,3 +3,4 @@ log/
 deploy/
 *.sqlite3
 deploy.rb
+Gemfile.lock
