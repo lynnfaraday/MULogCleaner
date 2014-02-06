@@ -1,5 +1,7 @@
 # Lines starting with ( or < are usually channels unless they're combat messages
 Replace|^<FS3.+$|     $&
+Replace|^<\s+.+:.+:.+$|     $&
+Replace|^<\s+Net Result:|     $&
 
 # Attacks
 Replace|^<COMBAT> .+ attacks|     $&
