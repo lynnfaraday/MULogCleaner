@@ -17,7 +17,7 @@ class HomeController < ApplicationController
         @error = nil
       rescue Exception => e
         @parsed_log = ""
-        @error = "Error reading file.  Please make sure it's a plain text log.  If it is, lease send this error to faraday@aresmush.com: <br/><br/>#{e} #{e.backtrace}"
+        @error = "Error reading file.  Please make sure it's a plain text log.  If it is, lease send this error to faraday@aresmush.com: \r\n\r\n#{e} #{e.backtrace}"
       end
     rescue Exception => e
       @parsed_log = ""
