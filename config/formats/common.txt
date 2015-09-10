@@ -1,3 +1,6 @@
+# Ares OOC
+^\%\%
+
 # SimpleMU Log Tag
 ^Logfile from
 
