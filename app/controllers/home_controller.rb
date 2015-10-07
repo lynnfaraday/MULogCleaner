@@ -10,7 +10,15 @@ class HomeController < ApplicationController
       parser = LogParser.new(format)
       begin
         lines = []
-        uploaded_file.open.each do |l|
+
+        file_name = uploaded_file.tempfile.to_path.to_s
+
+        text = File.read(
+          file_name, 
+          {encoding: 'UTF-8'}
+        )
+        
+        text.force_encoding('ASCII-8BIT').encode('UTF-8', :invalid => :replace, :undef => :replace, :replace => '?').split("\n").each do |l|
           lines << l
         end        
         @parsed_log = parser.parse(lines)
