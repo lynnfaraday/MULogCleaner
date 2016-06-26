@@ -16,6 +16,7 @@ Replace|^<COMBAT> .+ has been \*\*KO'd\*\*|     $&
 Replace|^<COMBAT> .+ treats|     $&
 Replace|^<COMBAT> .+ attempts to treat|     $&
 Replace|^<COMBAT> .+ attempts to rally|     $&
+Replace|^<COMBAT> .+ is not out of the fight yet!|     $&
 
 # Suppression
 Replace|^<COMBAT> .+ suppresses|     $&

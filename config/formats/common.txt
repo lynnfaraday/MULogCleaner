@@ -9,7 +9,7 @@
 
 # Pages
 ^.+ pages:
-^.+ pages:.+
+^[\S]+ pages .+:
 ^From afar
 ^You paged .+ with
 ^Long distance to

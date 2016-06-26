@@ -1,36 +1,37 @@
 # Lines starting with ( or < are usually channels unless they're combat messages
-Replace|^<FS3.+$|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<\s+.+:.+:.+$|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<\s+Net Result:|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<FS3.+$|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<\s+.+:.+:.+$|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<\s+Net Result:|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Attacks
-Replace|^<COMBAT> .+ attacks|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ takes careful aim at|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ fires|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> EXPLOSION|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> CREW HIT|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> SHRAPNEL|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ attacks|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ takes careful aim at|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ fires|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> EXPLOSION|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> CREW HIT|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> SHRAPNEL|[[span class="fs3combat"]]//$&//[[/span]]
 
 # KOs and medics
-Replace|^<COMBAT> .+ has been \*\*KO'd\*\*|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ treats|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ attempts to treat|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ attempts to rally|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ has been \*\*KO'd\*\*|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ treats|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ attempts to treat|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ attempts to rally|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ is not out of the fight yet!|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Suppression
-Replace|^<COMBAT> .+ suppresses|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ tries to suppress|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ suppresses|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ tries to suppress|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Subdue and Escape
-Replace|^<COMBAT> .+ subdues|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ tries to subdue|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ attempts to subdue|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ continues to subdue|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ attempts to escape|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
-Replace|^<COMBAT> .+ escapes from|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ subdues|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ tries to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ attempts to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ continues to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ attempts to escape|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ escapes from|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Reload
-Replace|^<COMBAT> .+ reloads|[[span style="color:gray;margin:5%"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ reloads|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Make sure standard MUSH configs are after all of the FS3 stuff
 ^<

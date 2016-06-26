@@ -15,6 +15,20 @@ The log cleaner takes raw log files (presumably captured by your favorite MU* cl
 
 <p><font color="red">This tool has been well-tested, but there are no guarantees.  If you're worried, keep copies of your original log files.</font></p>
 
+<p>
+    If you're using the FS3 Combat Wiki format, you can either add a ".fs3combat" class to your wiki CSS, or add the following code at the beginning of the log:
+    
+    <blockquote>
+[[module CSS]]
+.fs3combat {
+margin: 5%;
+color: gray;
+font-style: italic;
+}
+[[/module]]
+</blockquote>
+<p>
+    
 <hr/>
 
 <%= form_tag('parse.html',  multipart: true) do |f| %>
