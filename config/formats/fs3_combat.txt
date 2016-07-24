@@ -17,6 +17,7 @@ Replace|^<COMBAT> .+ treats|     $&
 Replace|^<COMBAT> .+ attempts to treat|     $&
 Replace|^<COMBAT> .+ attempts to rally|     $&
 Replace|^<COMBAT> .+ is not out of the fight yet!|     $&
+Replace|^<COMBAT> .+ spends a luck point to keep fighting!|     $&
 
 # Suppression
 Replace|^<COMBAT> .+ suppresses|     $&

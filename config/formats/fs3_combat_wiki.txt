@@ -17,6 +17,7 @@ Replace|^<COMBAT> .+ treats|[[span class="fs3combat"]]//$&//[[/span]]
 Replace|^<COMBAT> .+ attempts to treat|[[span class="fs3combat"]]//$&//[[/span]]
 Replace|^<COMBAT> .+ attempts to rally|[[span class="fs3combat"]]//$&//[[/span]]
 Replace|^<COMBAT> .+ is not out of the fight yet!|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<COMBAT> .+ spends a luck point to keep fighting!|[[span class="fs3combat"]]//$&//[[/span]]
 
 # Suppression
 Replace|^<COMBAT> .+ suppresses|[[span class="fs3combat"]]//$&//[[/span]]
