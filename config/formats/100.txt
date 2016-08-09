@@ -1,4 +1,0 @@
-# Lines starting with ( or < are usually channels
-^<
-^\(
-Replace|\"<In Trigedasleng>[^\"]+\"|[[span class="trig"]]$&[[/span]]
