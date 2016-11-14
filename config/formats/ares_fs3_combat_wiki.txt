@@ -1,0 +1,40 @@
+# Lines starting with ( or < are usually channels unless they're combat messages
+Replace|^<FS3>.+$|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<\s+.+:.+:.+$|[[span class="fs3combat"]]//$&//[[/span]]
+
+# Attacks
+Replace|^<FS3Combat> .+ attacks|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ takes careful aim at|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ uses|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ fires|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> EXPLOSION|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> CREW HIT|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> SHRAPNEL|[[span class="fs3combat"]]//$&//[[/span]]
+
+# KOs and medics
+Replace|^<FS3Combat> .+ has been KOed|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ has been \*\*KO'd\*\*|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ treats|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ attempts to treat|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ attempts to rally|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ is not out of the fight yet!|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ spends a luck point to keep fighting!|[[span class="fs3combat"]]//$&//[[/span]]
+
+# Suppression
+Replace|^<FS3Combat> .+ suppresses|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ tries to suppress|[[span class="fs3combat"]]//$&//[[/span]]
+
+# Subdue and Escape
+Replace|^<FS3Combat> .+ subdues|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ tries to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ attempts to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ continues to subdue|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ attempts to escape|[[span class="fs3combat"]]//$&//[[/span]]
+Replace|^<FS3Combat> .+ escapes from|[[span class="fs3combat"]]//$&//[[/span]]
+
+# Reload
+Replace|^<FS3Combat> .+ reloads|[[span class="fs3combat"]]//$&//[[/span]]
+
+# Make sure standard MUSH configs are after all of the FS3 stuff
+^<
+^\(
