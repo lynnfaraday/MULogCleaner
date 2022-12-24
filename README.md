@@ -13,4 +13,6 @@ In a nutshell, that means you can use, share and modify it as long as you give c
 
 ## Privacy
 
-See our [privacy policy](https://aresmush.com/privacy.html).
+The only data stored by this app are usage logs, which may include your IP address. The actual logs you upload are not stored. 
+
+Your data will only be used for troubleshooting, and will not be disclosed to a third party except as required by law. 
