@@ -2,22 +2,24 @@ require 'log_parser'
 require 'log_format_reader'
 
 class HomeController < ApplicationController
+  skip_before_action :verify_authenticity_token
   
   def parse
-    uploaded_file = params[:file]
+    file_data = params[:file]
     format = params[:log_format]
     begin
       parser = LogParser.new(format)
       begin
-        lines = []
-
-        file_name = uploaded_file.tempfile.to_path.to_s
-
-        text = File.read(
-          file_name, 
-          {encoding: 'UTF-8'}
-        )
+        lines = []        
         
+        if file_data.respond_to?(:read)
+          text = file_data.read
+        elsif file_data.respond_to?(:path)
+          text = File.read(file_data.path, { encoding: 'UTF-8'})
+        else
+          raise "Bad file_data: #{file_data.class.name}"
+        end
+                
         text.force_encoding('ASCII-8BIT').encode('UTF-8', :invalid => :replace, :undef => :replace, :replace => '?').split("\n").each do |l|
           lines << l
         end        
@@ -32,7 +34,6 @@ class HomeController < ApplicationController
       @error = "Sorry!  Something went wrong.  Please send this error to faraday@aresmush.com: #{e}"
     end
   
-    
-    render "parse"
+    render :parse
   end
 end

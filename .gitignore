@@ -1,3 +1,4 @@
+vendor/*
 *.rbc
 capybara-*.html
 .rspec
